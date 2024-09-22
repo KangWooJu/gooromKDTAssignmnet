@@ -58,7 +58,7 @@ public class BoardService {
         Board board = boardOptional.orElseThrow(()->new RuntimeException());
 
         board.setDeleteStatus(DeleteStatus.DELETE);
-        boardRepository.save(board);
+        boardRepository.delete(board);
         return "Deleted";
     }
 

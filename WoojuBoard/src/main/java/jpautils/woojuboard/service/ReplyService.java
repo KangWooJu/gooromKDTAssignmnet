@@ -65,7 +65,7 @@ public class ReplyService {
         Reply reply = replyOptional.orElseThrow(()->new RuntimeException());
 
         reply.setDeleteStatus(DeleteStatus.DELETE);
-        replyRepository.save(reply);
+        replyRepository.delete(reply);
         return "Deleted";
     }
 
