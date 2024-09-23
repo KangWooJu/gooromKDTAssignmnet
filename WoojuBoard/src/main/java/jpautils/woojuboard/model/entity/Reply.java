@@ -13,7 +13,7 @@ import org.hibernate.annotations.SQLDelete;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@SQLDelete(sql="UPDATE board SET DELETE_STATUS = 'DELETE' WHERE board_number = ?")
+@SQLDelete(sql="UPDATE board SET DELETE_STATUS = 'DELETE' WHERE reply_number = ?")
 public class Reply {
 
     @Id
