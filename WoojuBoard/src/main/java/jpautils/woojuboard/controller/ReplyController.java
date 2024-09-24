@@ -33,7 +33,7 @@ public class ReplyController {
         return replyService.makeReply(replyPostRequest);
     }
 
-    @DeleteMapping
+    @DeleteMapping("reply")
     public String deleteBoard(@RequestBody ReplyDeleteRequest replyDeleteRequest){
         return replyService.deleteReply(replyDeleteRequest);
     }
